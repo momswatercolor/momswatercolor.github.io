@@ -129,6 +129,26 @@ a.card:hover { color: var(--ink); border-color: #D9C3B0; }
   border: 1px solid var(--line);
 }
 .piece .btn { min-height: 44px; padding: 10px 18px; font-size: 15px; margin-top: 4px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.badge.ok { background: #E7F0E3; border-color: #C9DCC2; color: #2F5A2A; }
+.badge.sold { background: #F3EEEA; color: var(--ink-muted); }
+.prices { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+.prices div { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+.piece a.small { text-decoration: underline; text-underline-offset: 3px; }
+.filter-label { font-size: 14px; font-weight: 700; color: var(--ink-muted); margin: 0 0 8px; }
+
+/* Email + copy button */
+[data-email] { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 10px; justify-content: center; }
+.email-text { font-weight: 700; user-select: all; -webkit-user-select: all; }
+.copy-btn {
+  min-height: 36px; padding: 0 14px; border-radius: 999px; cursor: pointer;
+  border: 1.5px solid currentColor; background: transparent; color: inherit;
+  font-family: var(--sans); font-size: 14px; font-weight: 600;
+}
+.email-box {
+  display: inline-flex; padding: 14px 20px; border-radius: 14px; background: var(--white);
+  border: 1px solid var(--line); color: var(--ink); font-size: 18px;
+}
 
 /* Steps */
 .steps { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }

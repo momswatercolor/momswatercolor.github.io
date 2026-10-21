@@ -20,7 +20,7 @@
     <nav class="nav" aria-label="Main">
       <a href="paintings.html" aria-current="page">Paintings</a>
       <a href="custom.html">Custom Work</a>
-      <a href="index.html#clipart">Clip Art</a>
+      <a href="index.html#digital">Digital Download</a>
       <a href="about.html">About Miae</a>
     </nav>
   </div>
@@ -32,23 +32,44 @@
       <div class="stack" style="margin-bottom: 32px; max-width: 720px">
         <h1>Paintings</h1>
         <p class="lead">Original watercolors, each one hand-painted by Miae on cold-pressed Arches paper. Tap a painting to see it larger.</p>
+        <p class="muted">Originals from $20 · Prints $10 (up to 5×8") or $15 (larger sizes) · <a href="#how-to-buy">How to buy</a></p>
       </div>
-      <div id="paintings-filters" class="filters" style="margin-bottom: 28px"></div>
+      <p class="filter-label">Show</p>
+      <div id="avail-filters" class="filters" style="margin-bottom: 16px"></div>
+      <div id="subject-filters" class="filters" style="margin-bottom: 16px"></div>
+      <p id="paintings-count" class="small" style="margin-bottom: 20px" aria-live="polite"></p>
       <div id="paintings-gallery" class="gallery"></div>
+      <p id="paintings-empty" class="lead" hidden>Nothing here right now. Every painting has found a home, but new ones are on the way! <a href="custom.html">Commission something special</a> in the meantime.</p>
       <noscript><p>Please turn on JavaScript to see the paintings.</p></noscript>
     </div>
   </section>
 
-  <section class="section tint band">
+  <section id="how-to-buy" class="section tint">
+    <div class="wrap">
+      <h2 style="margin-bottom: 28px">How to buy</h2>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h3>Pick your painting</h3><p>Note its title, and whether you'd like the original or a print.</p></div>
+        <div class="step"><div class="num">2</div><h3>Email us</h3><p>Send the title to us at the address below. We'll confirm it's still available.</p></div>
+        <div class="step"><div class="num">3</div><h3>Pickup or shipping</h3><p>Pick up locally for free, or we'll mail it to you. Shipping is quoted when you order.</p></div>
+      </div>
+      <div class="stack" style="align-items: center; text-align: center; margin-top: 40px">
+        <div class="email-box"><span data-email>momswatercolor@gmail.com</span></div>
+        <p class="muted">Local pickup in:</p>
+        <div class="pickup">
+          <span>San Francisco (Noe Valley)</span><span>San Jose</span><span>Seattle</span><span>Portland</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band">
     <div class="wrap stack" style="align-items: center">
       <div class="hand">more on the way</div>
-      <h2>New paintings &amp; prints coming soon</h2>
-      <p class="lead">Miae paints every day. Want to hear when new originals or prints are ready, or looking for something specific? Drop us a note.</p>
+      <h2>Looking for something specific?</h2>
+      <p class="lead">Miae paints every day. If you'd like a painting of your own pet, place or favorite flower, she can paint it just for you.</p>
       <div class="btns" style="justify-content: center">
-        <a class="btn" href="mailto:momswatercolor@gmail.com?subject=Let%20me%20know%20about%20new%20paintings">Email us</a>
         <a class="btn ghost" href="custom.html">Commission a painting</a>
       </div>
-      <p class="small">Local pickup in San Francisco (Noe Valley), San Jose, Seattle and Portland.</p>
     </div>
   </section>
 </main>
@@ -56,9 +77,9 @@
 <footer class="site-footer">
   <div class="wrap">
     <div class="hand">thank you for visiting</div>
-    <p style="margin-top: 8px">Pickup available in San Francisco (Noe Valley), San Jose, Seattle and Portland.</p>
+    <p style="margin-top: 8px">Local pickup in San Francisco (Noe Valley), San Jose, Seattle and Portland. Shipping is quoted when you order.</p>
     <div class="links">
-      <a href="mailto:momswatercolor@gmail.com">momswatercolor@gmail.com</a>
+      <span data-email>momswatercolor@gmail.com</span>
       <a href="https://etsy.com/shop/mamaclipart" target="_blank" rel="noopener">Etsy clip art</a>
     </div>
     <p class="copy">© <span id="year">2026</span> Miae Lee. All paintings are original works; please don't copy or reproduce them without permission.</p>
